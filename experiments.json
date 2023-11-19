@@ -1,0 +1,22 @@
+[
+    {
+        "base_config": "-cache:il1 il1:64:64:{il1_assoc}:l -cache:dl1 dl1:64:64:{dl1_assoc}:l benchmarks/gcc/cc1.ss benchmarks/gcc/gcc.i",
+        "target_metrics": ["il1.miss_rate", "dl1.miss_rate"],
+        "experiment_name": "Experiment1",
+        "param_combinations": [
+            {"il1_assoc": 8, "dl1_assoc": 8},
+            {"il1_assoc": 16, "dl1_assoc": 16}
+        ],
+        "output_directory": "./data/experiment1"
+    },
+    {
+        "base_config": "-cache:il1 il1:32:32:{il1_assoc}:l -cache:dl1 dl1:32:32:{dl1_assoc}:l benchmarks/gcc/cc1.ss benchmarks/gcc/gcc.i",
+        "target_metrics": ["il1.miss_rate", "dl1.miss_rate"],
+        "experiment_name": "Experiment2",
+        "param_combinations": [
+            {"il1_assoc": 4, "dl1_assoc": 4},
+            {"il1_assoc": 8, "dl1_assoc": 8}
+        ],
+        "output_directory": "./data/experiment2"
+    }
+]

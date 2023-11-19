@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  simcache_app:
+    build: .
+    volumes:
+      - ./logs:/simcache_automation/logs
+      - ./data:/simcache_automation/data
